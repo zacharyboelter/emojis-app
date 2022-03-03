@@ -9,14 +9,14 @@ body {
     background-image: linear-gradient(#5DA4D9, #FFF);
 }
 
-#emojis {
-    font-size: 60px;
+#emojiContainer {
     margin: 40px;
     text-align: center;
 }
 
-.emoji {
+#emojiContainer span {
     margin: 10px;
+    font-size: 60px;
 }
 
 #push,#unshift {
