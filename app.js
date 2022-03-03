@@ -1,6 +1,6 @@
 
 
-const myEmojis = ["👨‍💻", "⛷", "🍲"]
+const myEmojis = ["👨‍💻", "🍷", "🚴🏼"]
 const emojiInput = document.getElementById("emoji-input")
 const emojiContainer = document.getElementById("emoji-container")
 const unshiftBtn = document.getElementById("unshift-btn")
