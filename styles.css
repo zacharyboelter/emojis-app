@@ -18,7 +18,7 @@ body {
     font-size: 60px;
 }
 
-#push-btn,#unshift-btn {
+#push-btn, #unshift-btn {
     background-color: #80D87F;
 }
 
@@ -44,13 +44,12 @@ input {
 
 button {
     font-family: Baloo;
-    letter-spacing: px;
     background: darkcyan;
     color: white;
     border: none;
     padding: 4px 10px;
     border-radius: 6px;
-    margin: 0 auto;
+    margin: 0 4px;
     transition: .3s;
 }
 
@@ -58,9 +57,17 @@ button:hover {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .buttons-wrapper {
     display: flex;
     justify-content: center;
-    margin: 10px 0 40px;
+    margin: 10px 0 0;
 }
+
+
+
+
+
+
+
 
