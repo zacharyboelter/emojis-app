@@ -1,20 +1,36 @@
 
-const myEmojis = ["👨‍💻", "⛷", "🍲"]
-const emojiContainer = document.getElementById("emoji-container")
 
-for (let i = 0; i < myEmojis.length; i++) {
-    const emoji = document.createElement('span')
-    emoji.textContent = myEmojis[i]
-    emojiContainer.append(emoji)
+const myEmojis = ["👨‍💻", "⛷", "🍲"]
+const emojiInput = document.getElementById("emoji-input")
+const emojiContainer = document.getElementById("emoji-container")
+const unshiftBtn = document.getElementById("unshift-btn")
+const pushBtn = document.getElementById("push-btn")
+
+
+
+function renderEmojis() {
+    emojiInput.value = ""
+    for (let i = 0; i < myEmojis.length; i++) {
+        const emoji = document.createElement('span')
+        emoji.textContent = myEmojis[i]
+        emojiContainer.append(emoji)
+    }
 }
 
-const pushBtn = document.getElementById("push-btn")
-pushBtn.addEventListener("click", function () {
-    const emojiInput = document.getElementById("emoji-input");
-    if (!emojiInput.value) {
-        emojiInput.value = ''
-    } else {
-        myEmojis.push(emojiInput.value);
-        emojiInput.value = '';
+renderEmojis()
+
+pushBtn.addEventListener("click", function(){
+    if (emojiInput.value) {
+        myEmojis.push(emojiInput.value)
+        emojiContainer.innerHTML = ""
+        renderEmojis()
+    }
+})
+
+unshiftBtn.addEventListener("click", function(){
+    if (emojiInput.value) {
+        myEmojis.unshift(emojiInput.value)
+        emojiContainer.innerHTML = ""
+        renderEmojis()
     }
 })
