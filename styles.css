@@ -51,8 +51,13 @@ button {
     padding: 4px 10px;
     border-radius: 6px;
     margin: 0 auto;
+    transition: .3s;
 }
 
+button:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .buttons-wrapper {
     display: flex;
     justify-content: center;
