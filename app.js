@@ -1,10 +1,10 @@
 const myEmojis = ["👨‍💻", "🍷", "🚴🏼"]
-const emojiInput = document.getElementById("emoji-input")
-const emojiContainer = document.getElementById("emoji-container")
-const unshiftBtn = document.getElementById("unshift-btn")
-const pushBtn = document.getElementById("push-btn")
-const popBtn = document.getElementById("pop-btn")
-const shiftBtn = document.getElementById("shift-btn")
+const emojiInput = document.querySelector("#emoji-input")
+const emojiContainer = document.querySelector("#emoji-container")
+const unshiftBtn = document.querySelector("#unshift-btn")
+const pushBtn = document.querySelector("#push-btn")
+const popBtn = document.querySelector("#pop-btn")
+const shiftBtn = document.querySelector("#shift-btn")
 function renderEmojis() {
     emojiInput.value = ""
     for (let i = 0; i < myEmojis.length; i++) {
